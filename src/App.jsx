@@ -1,19 +1,23 @@
 import React from 'react'
 import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import 'remixicon/fonts/remixicon.css'
+import './index.css'
+import Buttons from './components/Buttons';
 const App = () => {
-  return <div className=" px-3 pt-1 md:px-7  min-h-screen overflow-x-hidden bg-gradient-to-br from-black via-zinc-900 to-slate-800 text-white font-bold">
-    {/* <nav className='flex items-center justify-between'>
-      <img src={Logo} loading="lazy"
-        className='w-16 h-16 object-cover ' />
+  return <div className=" px-3  pt-1 md:px-7  min-h-screen overflow-x-hidden  bg-gradient-to-br from-black via-zinc-900 to-slate-800 text-white font-bold">
+    <Navbar />
+    <Intro />
 
-         <span className='hidden md:inline-block'> rubarueventsentertainment@gmail.com</span>
+    <div className='relative top-20 pb-4  flex flex-col flex-wrap gap-3 justify-center'>
+      <Buttons content={"Connect with Instragram"} iconContent={"ri-instagram-line text-pink-600"}/>
+      <Buttons content={"Join Whatsapp Community"}
+      iconContent={"ri-whatsapp-line text-green-600"}/>
+      <Buttons content={"Connect On Sorts My Scene"} iconContent={"ri-ticket-2-line text-pink-600"}/>
+       <Buttons content={"Message to Admin"}
+      iconContent={"ri-whatsapp-line text-green-600"}/>
 
-      <a href='tel:+916264065484'><button className='px-3 py-2 rounded-md  bg-[#D4AF37] '>Contact us</button></a>
-
-
-    </nav>
-    <div className="h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div> */}
-    <Navbar/>
+    </div>
   </div>
 }
 
