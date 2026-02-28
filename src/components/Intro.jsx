@@ -46,7 +46,7 @@ const Intro = ({buttonRef}) => {
              onClick={()=>{
                 scrollingFunction();
              }}
-        className='bg-white/10  px-3 py-2 mt-4 backdrop-blur-3xl shadow-lg rounded-2xl border border-white/20 font-bold text-[#D4AF37] md:px-4 md:text-xl '>Connect With Us</motion.button>
+        className='bg-white/10 btn  px-3 py-2 mt-4 backdrop-blur-3xl shadow-lg rounded-2xl border border-white/20 font-bold text-[#D4AF37] md:px-4 md:text-xl '><span className='btn-text'>Connect With Us</span></motion.button>
     </motion.div>
 
 
