@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body::-webkit-scrollbar{
+     display: none;
+}
+
+.bd::-webkit-scrollbar{
+    display: none;
+}
+
+@layer utilities {
+  .circle {
+    width: 1.1rem;
+    height: 1.1rem;
+    background: #D4AF37;
+    border-radius: 50%;
+    border: none;
+  }
+
+}

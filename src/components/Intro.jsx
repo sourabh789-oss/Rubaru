@@ -1,7 +1,13 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
-const Intro = () => {
+const Intro = ({buttonRef}) => {
+    const scrollingFunction = () => {
+      buttonRef?.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
 
     return <motion.div className='intro relative top-8  font-thin'>
         <motion.p
@@ -26,7 +32,7 @@ const Intro = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
         
         className='font-light my-3 md:text-2xl  -tracking-tighter'>
-            Rubaru is a premium event platform bringing unforgettable DJ nights, electrifying club parties, and high-energy live performances together in one place. </motion.section>
+            <span className='text-[#D4AF37] font-serif'>Rubaru</span> is a premium event platform bringing unforgettable DJ nights, electrifying club parties, and high-energy live performances together in one place. </motion.section>
 
         <motion.button
          initial={{x:-70,opacity:0}}
@@ -37,6 +43,9 @@ const Intro = () => {
             viewport={{ once: true }}
 
             transition={{ duration: 0.8, ease: "easeOut" }}
+             onClick={()=>{
+                scrollingFunction();
+             }}
         className='bg-white/10  px-3 py-2 mt-4 backdrop-blur-3xl shadow-lg rounded-2xl border border-white/20 font-bold text-[#D4AF37] md:px-4 md:text-xl '>Connect With Us</motion.button>
     </motion.div>
 
