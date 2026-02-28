@@ -4,7 +4,7 @@ const Navbar = () => {
 
   return <>
     <nav className='flex items-center justify-between '>
-      <img src={Logo} loading="lazy"
+      <img src={Logo} loading="eager"
         className='w-16 h-16 object-cover ' />
 
       <a href="mailto:rubarueventsentertainment@gmail.com" target="_blank" className="hidden md:flex md:items-center"><i className="ri-mail-line md:text-base text-[#EA4335] mr-2"></i><span> rubarueventsentertainment@gmail.com</span></a>

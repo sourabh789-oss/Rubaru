@@ -19,7 +19,7 @@ const Intro = ({buttonRef}) => {
             viewport={{ once: true }}
 
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className='font-thin text-2xl md:text-4xl md:w-[30rem]'><span className='text-[#D4AF37]  text-[1.6rem] md:text-5xl'>Rubaru</span>– Where Every Event Becomes an Experience.</motion.p>
+            className='font-thin text-2xl md:text-4xl md:w-[30rem]'><span className='text-[#D4AF37]  text-[1.6rem] md:text-5xl'>Rubaru</span>– Curating Premium events & social experiences.</motion.p>
 
         <motion.section 
         initial={{ x: 90, opacity: 0,scale:1.2 }}
